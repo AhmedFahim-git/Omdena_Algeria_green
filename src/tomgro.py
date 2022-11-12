@@ -2,6 +2,13 @@ import numpy as np
 import numpy.typing as npt
 import pandas as pd
 
+# Credits to https://gist.github.com/gyosit/abeab4e595d7ddcd65b55c1270d240c8
+# Reference
+# Jones(1999) "Reduced state-variable tomato growth model"
+# Jones(1991) "A dynamix tomato growth and yield model(TOMGRO)"
+# Dimokas(2009) "Calibration and validation of a biological model..."
+# Heuvelink(1994) "Dry-matter partitioning in a tomato crop:Comparison of two simulation models"
+
 
 class TOMGRO:
     def __init__(self, dens=1.95, N=2.17, LAI=0.0028, Wf=0.0, W=0.175, Wm=0.0):
